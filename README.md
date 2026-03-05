@@ -6,8 +6,7 @@ Frontend interview task with HTML, CSS, JS.
 - Responsive design (mobile + desktop)
 - Contact form with validation
 - JSONPlaceholder API integration
-- Hamburger menu for mobile
-- 
+- Hamburger menu for mobile 
 ## Files
 - `index.html` - Structure
 - `styles.css` - Styling
