@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Website</div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <h1>Welcome to Website</h1>
+        <p>Build amazing web experiences with modern frontend technologies.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Responsive and modern web applications using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="card">
+                <h3>API Integration</h3>
+                <p>Seamless integration with REST APIs for dynamic content.</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>Intuitive and user-friendly interfaces for better engagement.</p>
+            </div>
+        </div>
+    </section>
+    <section id="users" class="api-section">
+        <h2>Users from API</h2>
+        <div class="users-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Company</th>
+                    </tr>
+                </thead>
+                <tbody id="users-table">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name *</label><br>
+            <input type="text" id="name" required>
+            <div class="error" id="name-error">Name is required.</div><br>
+
+            <label for="email">Email *</label><br>
+            <input type="email" id="email" required>
+            <div class="error" id="email-error">Please enter a valid email.</div><br>
+
+            <label for="phone">Phone (10 digits) *</label><br>
+            <input type="tel" id="phone" required>
+            <div class="error" id="phone-error">Phone must be exactly 10 digits.</div><br>
+
+            <label for="message">Message *</label><br>
+            <textarea id="message" required></textarea>
+            <div class="error" id="message-error">Message is required.</div><br>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Website. All rights reserved. | Frontend Interview Task</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
